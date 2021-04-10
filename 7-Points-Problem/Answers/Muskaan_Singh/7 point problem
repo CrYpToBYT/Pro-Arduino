@@ -1,0 +1,34 @@
+//Digital Pins/Variables
+int blueLED1 = 2; //Blue LED to Pin 2
+int yellowLED2 = 3; //Yellow LED to Pin 3
+int greenLED3 = 4; //Green LED to Pin 4
+int redLED4 = 5; //Red LED to pin 5
+int buzzer = 6; //Buzzer to pin 6
+void setup() { //Setup Code
+ pinMode(blueLED1, OUTPUT); //Blue LED as output
+ pinMode(yellowLED2, OUTPUT); //Yellow LED as output
+ pinMode(greenLED3, OUTPUT); //Green LED as output
+ pinMode(redLED4, OUTPUT); //Red LED as output
+ pinMode(buzzer, OUTPUT); //Buzzer as output
+ digitalWrite(buzzer, HIGH); //Turn Buzzer on
+}
+void loop() { //Loop code
+ digitalWrite(blueLED1, HIGH); //Blue led on
+ delay(50); //wait for 1/25 of a second
+ digitalWrite(blueLED1, LOW); //Blue led off
+ digitalWrite(yellowLED2, HIGH); //Yellow led on
+ delay(50); //wait for 1/25 of a second
+ digitalWrite(yellowLED2, LOW); //Yellow led off
+ digitalWrite(greenLED3, HIGH); //Green led on
+ delay(50); //wait for 1/25 of a second
+ digitalWrite(greenLED3, LOW); //Green led off
+ digitalWrite(redLED4, HIGH); //Red led on
+ delay(50); //wait for 1/25 of a second
+ digitalWrite(redLED4, LOW); //Red led off
+ digitalWrite(greenLED3, HIGH); //Green led on
+ delay(50); //wait for 1/25 of a second
+ digitalWrite(greenLED3, LOW); //Green led off
+ digitalWrite(yellowLED2, HIGH); //Yellow led on
+ delay(50); //wait for 1/25 of a second
+ digitalWrite(yellowLED2, LOW); //Yellow led off
+}
