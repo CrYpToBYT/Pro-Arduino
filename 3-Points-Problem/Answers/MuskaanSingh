@@ -1,14 +1,9 @@
-int maxPeople = 5; // maximum number of people allowed before the alarm goes off
+int maxP = 5; // maximum number of people allowed before the alarm goes off
 int sensitivity = 5; //lower values will make it more sensitive and higher values will make it less sensitive
 //---------------------------------------------------
-
-
 #include <TM1637.h>
-
 int currentPeople = 0;
-
 int buzzer = 8;
-
 TM1637 tm(2,3);
 
 int sensor1[] = {4,5};
